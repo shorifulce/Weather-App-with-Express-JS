@@ -36,7 +36,7 @@ app.post("/", function(req,res){
           const icon=weatherdata.weather[0].icon;
           const imageURL="https://openweathermap.org/img/wn/"+icon+"@2x.png";
 
-          
+          //Request response
           res.write("<p> Description: "+weatherDescription+"<p>"+"<h1> temperture is:" +temp+ "</h1>");
           res.write("<img src="+imageURL+">");
 
